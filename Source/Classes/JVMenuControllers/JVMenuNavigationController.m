@@ -37,11 +37,13 @@
 
 
 #pragma mark - UINavigationController delegate
+CGAffineTransform sudoTransform;
 
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     // perparing view controller before display
-    viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.6, 0.6);
+    sudoTransform = viewController.view.transform;
+    viewController.view.transform = CGAffineTransformScale(sudoTransform, 0.5, 0.5);
     
     // presenting view controller animations
     [UIView animateWithDuration:0.2
@@ -51,7 +53,7 @@
                         options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
                          // animations
-                         viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0);
+                         viewController.view.transform = CGAffineTransformScale(sudoTransform, 2, 2);
                      }
                      completion:nil];
 }

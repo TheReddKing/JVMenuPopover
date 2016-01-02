@@ -460,7 +460,7 @@
 
 
 #pragma mark - Show & Close menu
-
+CGAffineTransform sudoTransform;
 - (void)showMenuWithController:(UIViewController *)viewController
 {
     if(self.doneAnimations)
@@ -478,7 +478,8 @@
                         options:0
                      animations:^{
                          // animation
-                         self.currentViewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.6, 0.6);
+                         sudoTransform = self.currentViewController.view.transform;
+                         self.currentViewController.view.transform = CGAffineTransformScale(sudoTransform, 0.5, 0.5);
                          //                         self.currentController.view.frame = CGRectMake(30, 100, 300, 500);
                          //                         self.currentController.view.clipsToBounds = YES;
                      } completion:^(BOOL finished) {
@@ -534,7 +535,7 @@
                         options:0
                      animations:^{
                          // animations
-                         self.currentViewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0);
+                         self.currentViewController.view.transform = CGAffineTransformScale(sudoTransform, 1.0, 1.0);
                      } completion:^(BOOL finished) {
                          // completion
                          self.doneAnimations = NO;
