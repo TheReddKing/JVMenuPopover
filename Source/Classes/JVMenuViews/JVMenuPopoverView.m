@@ -41,6 +41,8 @@
 
 @property (nonatomic, assign) BOOL doneAnimations;
 
+@property (nonatomic) int height;
+
 // Protected Methods
 - (void)setupView;
 
@@ -98,6 +100,11 @@
     {
         self.screenSize = [UIScreen mainScreen].bounds.size;
         self.frame = CGRectMake(0, 0, self.screenSize.width, self.screenSize.height);
+    }
+    if(self.menuItems.menuTitles.count > 0) {
+        self.height = min(self.frame.size.height/self.menuItems.menuTitles.count,100);
+    } else {
+        self.height = 70;
     }
     
     [self addSubview:self.backgroundView];
@@ -296,7 +303,12 @@
     cell.backgroundColor = [UIColor clearColor];
 
     cell.textLabel.backgroundColor = [UIColor clearColor];
-    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18];
+    UIFont *font = [UIFont fontWithName:@"Lato" size:18]; // find the height of a 12.0pt font
+    CGSize size = [string sizeWithFont:font];
+    float pointsPerPixel = 18.0 / size.height; // compute the ratio
+    
+    float desiredFontSize = _height * pointsPerPixel;
+    cell.textLabel.font = [UIFont fontWithName:@"Lato" size:desiredFontSize];
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.textAlignment = NSTextAlignmentLeft;
     
@@ -360,7 +372,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // return the height of row
-    return 70;
+    return _height;
 }
 
 
