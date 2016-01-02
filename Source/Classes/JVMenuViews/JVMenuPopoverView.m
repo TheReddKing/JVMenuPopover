@@ -101,11 +101,7 @@
         self.screenSize = [UIScreen mainScreen].bounds.size;
         self.frame = CGRectMake(0, 0, self.screenSize.width, self.screenSize.height);
     }
-    if(self.menuItems.menuTitles.count > 0) {
-        self.height = min(self.frame.size.height/self.menuItems.menuTitles.count,100);
-    } else {
-        self.height = 70;
-    }
+    self.height = MAX(self.frame.size.height/(self.menuItems.menuTitles.count+1),80);
     
     [self addSubview:self.backgroundView];
     [self addSubview:self.shadowView];
@@ -303,11 +299,15 @@
     cell.backgroundColor = [UIColor clearColor];
 
     cell.textLabel.backgroundColor = [UIColor clearColor];
-    UIFont *font = [UIFont fontWithName:@"Lato" size:18]; // find the height of a 12.0pt font
-    CGSize size = [string sizeWithFont:font];
-    float pointsPerPixel = 18.0 / size.height; // compute the ratio
+    UIFont *font = [UIFont fontWithName:@"Lato" size:18]; // find the height of a 12.0pt font.
+    NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:@"This is really long"];
+    [attrStr addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, [@"This is really long" length])];
     
-    float desiredFontSize = _height * pointsPerPixel;
+    CGRect rect = [attrStr boundingRectWithSize:CGSizeMake(self.frame.size.width/2 - _height, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
+    
+    float pointsPerPixel = 18.0 / rect.size.height; // compute the ratio
+    
+    float desiredFontSize = (_height/2) * pointsPerPixel;
     cell.textLabel.font = [UIFont fontWithName:@"Lato" size:desiredFontSize];
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.textAlignment = NSTextAlignmentLeft;
