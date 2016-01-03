@@ -101,7 +101,7 @@
         self.screenSize = [UIScreen mainScreen].bounds.size;
         self.frame = CGRectMake(0, 0, self.screenSize.width, self.screenSize.height);
     }
-    self.height = MAX(self.frame.size.height/(self.menuItems.menuTitles.count+1),80);
+    self.height = MIN(MAX(self.frame.size.height/(self.menuItems.menuTitles.count+2),50),120);
     
     [self addSubview:self.backgroundView];
     [self addSubview:self.shadowView];
@@ -299,15 +299,8 @@
     cell.backgroundColor = [UIColor clearColor];
 
     cell.textLabel.backgroundColor = [UIColor clearColor];
-    UIFont *font = [UIFont fontWithName:@"Lato" size:18]; // find the height of a 12.0pt font.
-    NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:@"This is really long"];
-    [attrStr addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, [@"This is really long" length])];
     
-    CGRect rect = [attrStr boundingRectWithSize:CGSizeMake(self.frame.size.width/2 - _height, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
-    
-    float pointsPerPixel = 18.0 / rect.size.height; // compute the ratio
-    
-    float desiredFontSize = (_height/2) * pointsPerPixel;
+    float desiredFontSize = 2.286 + 0.049*self.frame.size.width;
     cell.textLabel.font = [UIFont fontWithName:@"Lato" size:desiredFontSize];
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.textAlignment = NSTextAlignmentLeft;
