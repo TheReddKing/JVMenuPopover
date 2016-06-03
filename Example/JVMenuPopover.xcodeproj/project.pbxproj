@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AA3B48F1C374A44009BFF0A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0AA3B4771C374A44009BFF0A /* .gitkeep */; };
+		0AA3B4901C374A44009BFF0A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0AA3B4791C374A44009BFF0A /* .gitkeep */; };
+		0AA3B4911C374A44009BFF0A /* UIColor+JVMenuCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3B47C1C374A44009BFF0A /* UIColor+JVMenuCategory.m */; };
+		0AA3B4921C374A44009BFF0A /* UIImage+JVMenuCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3B47E1C374A44009BFF0A /* UIImage+JVMenuCategory.m */; };
+		0AA3B4931C374A44009BFF0A /* UIView+JVMenuCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3B4801C374A44009BFF0A /* UIView+JVMenuCategory.m */; };
+		0AA3B4941C374A44009BFF0A /* UIViewController+JVMenuCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3B4821C374A44009BFF0A /* UIViewController+JVMenuCategory.m */; };
+		0AA3B4951C374A44009BFF0A /* UIVisualEffectView+JVMenuCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3B4841C374A44009BFF0A /* UIVisualEffectView+JVMenuCategory.m */; };
+		0AA3B4961C374A44009BFF0A /* JVMenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3B4871C374A44009BFF0A /* JVMenuNavigationController.m */; };
+		0AA3B4971C374A44009BFF0A /* JVMenuItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3B48A1C374A44009BFF0A /* JVMenuItems.m */; };
+		0AA3B4981C374A44009BFF0A /* JVMenuPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3B48E1C374A44009BFF0A /* JVMenuPopoverView.m */; };
 		1463468FC1798202FB11350A /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C010DDD49602B47F1A1646 /* libPods-Tests.a */; };
 		3C37FB011ACB80D100D389B0 /* about-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C37FAFA1ACB80D100D389B0 /* about-48@2x.png */; };
 		3C37FB021ACB80D100D389B0 /* ask_question-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C37FAFB1ACB80D100D389B0 /* ask_question-48@2x.png */; };
@@ -54,6 +64,25 @@
 
 /* Begin PBXFileReference section */
 		09C010DDD49602B47F1A1646 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA3B4771C374A44009BFF0A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0AA3B4791C374A44009BFF0A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0AA3B47B1C374A44009BFF0A /* UIColor+JVMenuCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JVMenuCategory.h"; sourceTree = "<group>"; };
+		0AA3B47C1C374A44009BFF0A /* UIColor+JVMenuCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JVMenuCategory.m"; sourceTree = "<group>"; };
+		0AA3B47D1C374A44009BFF0A /* UIImage+JVMenuCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JVMenuCategory.h"; sourceTree = "<group>"; };
+		0AA3B47E1C374A44009BFF0A /* UIImage+JVMenuCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JVMenuCategory.m"; sourceTree = "<group>"; };
+		0AA3B47F1C374A44009BFF0A /* UIView+JVMenuCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JVMenuCategory.h"; sourceTree = "<group>"; };
+		0AA3B4801C374A44009BFF0A /* UIView+JVMenuCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JVMenuCategory.m"; sourceTree = "<group>"; };
+		0AA3B4811C374A44009BFF0A /* UIViewController+JVMenuCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JVMenuCategory.h"; sourceTree = "<group>"; };
+		0AA3B4821C374A44009BFF0A /* UIViewController+JVMenuCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JVMenuCategory.m"; sourceTree = "<group>"; };
+		0AA3B4831C374A44009BFF0A /* UIVisualEffectView+JVMenuCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIVisualEffectView+JVMenuCategory.h"; sourceTree = "<group>"; };
+		0AA3B4841C374A44009BFF0A /* UIVisualEffectView+JVMenuCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIVisualEffectView+JVMenuCategory.m"; sourceTree = "<group>"; };
+		0AA3B4861C374A44009BFF0A /* JVMenuNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVMenuNavigationController.h; sourceTree = "<group>"; };
+		0AA3B4871C374A44009BFF0A /* JVMenuNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVMenuNavigationController.m; sourceTree = "<group>"; };
+		0AA3B4891C374A44009BFF0A /* JVMenuItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVMenuItems.h; sourceTree = "<group>"; };
+		0AA3B48A1C374A44009BFF0A /* JVMenuItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVMenuItems.m; sourceTree = "<group>"; };
+		0AA3B48B1C374A44009BFF0A /* JVMenuPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVMenuPopover.h; sourceTree = "<group>"; };
+		0AA3B48D1C374A44009BFF0A /* JVMenuPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVMenuPopoverView.h; sourceTree = "<group>"; };
+		0AA3B48E1C374A44009BFF0A /* JVMenuPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVMenuPopoverView.m; sourceTree = "<group>"; };
 		1C0C57331AD4F9079E9EDFCC /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1FCAAD443182BE2E422083B7 /* Pods-JVMenuPopover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVMenuPopover.release.xcconfig"; path = "Pods/Target Support Files/Pods-JVMenuPopover/Pods-JVMenuPopover.release.xcconfig"; sourceTree = "<group>"; };
 		3C37FAFA1ACB80D100D389B0 /* about-48@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-48@2x.png"; sourceTree = "<group>"; };
@@ -131,6 +160,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AA3B4751C374A44009BFF0A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3B4761C374A44009BFF0A /* Assets */,
+				0AA3B4781C374A44009BFF0A /* Classes */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		0AA3B4761C374A44009BFF0A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3B4771C374A44009BFF0A /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0AA3B4781C374A44009BFF0A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3B4791C374A44009BFF0A /* .gitkeep */,
+				0AA3B47A1C374A44009BFF0A /* JVMenuCategories */,
+				0AA3B4851C374A44009BFF0A /* JVMenuControllers */,
+				0AA3B4881C374A44009BFF0A /* JVMenuModel */,
+				0AA3B48B1C374A44009BFF0A /* JVMenuPopover.h */,
+				0AA3B48C1C374A44009BFF0A /* JVMenuViews */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0AA3B47A1C374A44009BFF0A /* JVMenuCategories */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3B47B1C374A44009BFF0A /* UIColor+JVMenuCategory.h */,
+				0AA3B47C1C374A44009BFF0A /* UIColor+JVMenuCategory.m */,
+				0AA3B47D1C374A44009BFF0A /* UIImage+JVMenuCategory.h */,
+				0AA3B47E1C374A44009BFF0A /* UIImage+JVMenuCategory.m */,
+				0AA3B47F1C374A44009BFF0A /* UIView+JVMenuCategory.h */,
+				0AA3B4801C374A44009BFF0A /* UIView+JVMenuCategory.m */,
+				0AA3B4811C374A44009BFF0A /* UIViewController+JVMenuCategory.h */,
+				0AA3B4821C374A44009BFF0A /* UIViewController+JVMenuCategory.m */,
+				0AA3B4831C374A44009BFF0A /* UIVisualEffectView+JVMenuCategory.h */,
+				0AA3B4841C374A44009BFF0A /* UIVisualEffectView+JVMenuCategory.m */,
+			);
+			path = JVMenuCategories;
+			sourceTree = "<group>";
+		};
+		0AA3B4851C374A44009BFF0A /* JVMenuControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3B4861C374A44009BFF0A /* JVMenuNavigationController.h */,
+				0AA3B4871C374A44009BFF0A /* JVMenuNavigationController.m */,
+			);
+			path = JVMenuControllers;
+			sourceTree = "<group>";
+		};
+		0AA3B4881C374A44009BFF0A /* JVMenuModel */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3B4891C374A44009BFF0A /* JVMenuItems.h */,
+				0AA3B48A1C374A44009BFF0A /* JVMenuItems.m */,
+			);
+			path = JVMenuModel;
+			sourceTree = "<group>";
+		};
+		0AA3B48C1C374A44009BFF0A /* JVMenuViews */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3B48D1C374A44009BFF0A /* JVMenuPopoverView.h */,
+				0AA3B48E1C374A44009BFF0A /* JVMenuPopoverView.m */,
+			);
+			path = JVMenuViews;
+			sourceTree = "<group>";
+		};
 		3CE5F0E51ACA4139009CFC23 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +317,7 @@
 		6003F593195388D20070C39A /* JVMenuPopover */ = {
 			isa = PBXGroup;
 			children = (
+				0AA3B4751C374A44009BFF0A /* Source */,
 				6003F59C195388D20070C39A /* JVMenuAppDelegate.h */,
 				6003F59D195388D20070C39A /* JVMenuAppDelegate.m */,
 				3CE5F1001ACA41B4009CFC23 /* JVMenuRootViewController.h */,
@@ -353,6 +458,7 @@
 				3C37FB021ACB80D100D389B0 /* ask_question-48@2x.png in Resources */,
 				3C37FB0D1ACB9B7700D389B0 /* menu_black-48@2x.png in Resources */,
 				3CF8C1D51ACCB22C00BB0CDE /* app_bg2@2x.jpg in Resources */,
+				0AA3B4901C374A44009BFF0A /* .gitkeep in Resources */,
 				3C37FB061ACB80D100D389B0 /* menu-48@2x.png in Resources */,
 				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
 				3C37FB0A1ACB825100D389B0 /* cancel_filled-50@2x.png in Resources */,
@@ -361,6 +467,7 @@
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				3C37FB011ACB80D100D389B0 /* about-48@2x.png in Resources */,
 				3C37FB051ACB80D100D389B0 /* home-48@2x.png in Resources */,
+				0AA3B48F1C374A44009BFF0A /* .gitkeep in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
 				3C37FB0B1ACB825100D389B0 /* cancel-48@2x.png in Resources */,
 				3CF8C1D41ACCB22C00BB0CDE /* app_bg1@2x.jpg in Resources */,
@@ -479,11 +586,19 @@
 			files = (
 				3CE5F0FE1ACA419D009CFC23 /* JVMenuSecondController.m in Sources */,
 				3CE5F1021ACA41B4009CFC23 /* JVMenuRootViewController.m in Sources */,
+				0AA3B4921C374A44009BFF0A /* UIImage+JVMenuCategory.m in Sources */,
+				0AA3B4971C374A44009BFF0A /* JVMenuItems.m in Sources */,
 				3CE5F0FD1ACA419D009CFC23 /* JVMenuFourthController.m in Sources */,
+				0AA3B4961C374A44009BFF0A /* JVMenuNavigationController.m in Sources */,
 				3CE5F1091ACA51E9009CFC23 /* JVMenuFifthController.m in Sources */,
 				3CE5F0FF1ACA419D009CFC23 /* JVMenuThirdController.m in Sources */,
 				6003F59E195388D20070C39A /* JVMenuAppDelegate.m in Sources */,
+				0AA3B4911C374A44009BFF0A /* UIColor+JVMenuCategory.m in Sources */,
+				0AA3B4941C374A44009BFF0A /* UIViewController+JVMenuCategory.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				0AA3B4951C374A44009BFF0A /* UIVisualEffectView+JVMenuCategory.m in Sources */,
+				0AA3B4981C374A44009BFF0A /* JVMenuPopoverView.m in Sources */,
+				0AA3B4931C374A44009BFF0A /* UIView+JVMenuCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
